@@ -1,0 +1,49 @@
+:root {
+    --article-color: green;
+    --div-color: yellow;
+    --section-color: blue;
+    --figure-color: violet;
+    --main-color: black;
+    --img-color:purple;
+}
+img {
+    border: 1px solid var(--img-color);
+}
+div,
+header,
+ul,
+article,
+section {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3,
+p {
+    border: 1px solid burlywood;
+}
+
+main {
+    border: 1px dashed var(--main-color);
+}
+
+article {
+    border: 1px solid var(--article-color);
+}
+
+div {
+    border: 1px solid var(--div-color);
+}
+
+section {
+    border: 1px solid var(--section-color);
+}
+
+figure {
+    width: 100%;
+    height: 200px;
+    ;
+    border: 1px solid var(--figure-color);
+}

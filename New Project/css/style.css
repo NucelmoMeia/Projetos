@@ -1,0 +1,97 @@
+/* Declaração de charset */
+@charset "UTF-8";
+
+/* Definição de fonte personalizada */
+@font-face {
+    font-family: Android;
+    src: url(../fonts/idroid.otf);
+    font-weight: normal;
+}
+
+/* Reset de estilos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Variáveis de cores */
+:root {
+    --cor0: #0D7309;
+    --cor1: #074005;
+    --cor2: #042603;
+    --cor3: #118C0D;
+    --cor4: #000900;
+    --cor5: #063d1e;
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: #0009004a;
+    font-family: var(--fonte-padrão);
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: var(--cor4);
+    color: var(--cor3);
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    /* Largura máxima do cabeçalho */
+    max-height: 200px;
+    min-width: 150px;
+    min-height: 30px;
+    text-align: center;
+    font-family: var(--fonte-android);
+    border-radius: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.429);
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+/* Estilos para títulos no conteúdo principal */
+main h1 {
+    font-size: 23px;
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+}
+
+/* Estilos para parágrafos no conteúdo principal */
+main p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 20px;
+    font-size: 1em;
+    font-family: var(--fonte-padrão);
+}
+
+/* Estilos para imagens */
+.img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    width: 150px;
+}
+
+footer{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    font-family: var(--fonte-android);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}

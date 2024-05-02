@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "DM SANS";
+    src: url("../font/DMSans_24pt-Light.ttf");
+}
+
+:root {
+    --fonte-primaria:"DM Sans", sans-serif;;
+    --body-color:rgb(250, 250, 250);
+}
+body {
+    font-family: var(--fonte-primaria);
+    background-color: var(--body-color);
+}
+#only_to_load{
+    opacity: 0;
+    display: none;
+}

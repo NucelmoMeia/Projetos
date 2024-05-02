@@ -1,0 +1,4 @@
+Aprendi que Respondividade faz o site se adaptar a qualquer tela.
+Definindo ás max-width e max-height.
+
+E :root sevi para definir propiedades e depois só cmçs a utilizar essas variaver com o var.

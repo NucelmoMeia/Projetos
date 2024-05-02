@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Detection</title>
+  <link rel="stylesheet" href="styles.css">
+  <style type="text/css">
+    body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.first-div {
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+}
+
+.second-div {
+  border: 1px solid blue;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+#scrollButton {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  </style>
+</head>
+<body>
+  <div class="first-div">
+    <h1>First Div</h1>
+  </div>
+  <div class="second-div" id="secondDiv">
+    <h1>Second Div</h1>
+    <button id="scrollButton">Button</button>
+  </div>
+ <script type="text/javascript">
+    window.addEventListener('scroll', function() {
+  var firstDiv = document.querySelector('.first-div');
+  var secondDiv = document.querySelector('.second-div');
+  var scrollButton = document.getElementById('scrollButton');
+
+  if (window.scrollY >= firstDiv.offsetHeight) {
+    secondDiv.style.display = 'block';
+  } else {
+    secondDiv.style.display = 'none';
+  }
+
+  if (window.scrollY >= secondDiv.offsetTop) {
+    scrollButton.style.display = 'block';
+  } else {
+    scrollButton.style.display = 'none';
+  }
+});
+
+  </script>
+</body>
+</html>

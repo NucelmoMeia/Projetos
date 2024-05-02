@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Viewport</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        text-align: center;
+        margin-top: 100px;
+    }
+    #dimensions {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Calculadora de Viewport</h1>
+    <div id="dimensions"></div>
+</div>
+
+<script>
+    function displayViewportDimensions() {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        
+        document.getElementById('dimensions').innerHTML = "Largura: " + width + "px" + "<br>" + "Altura: " + height + "px";
+    }
+    
+    window.addEventListener('resize', displayViewportDimensions);
+    displayViewportDimensions(); // Mostra as dimensões iniciais
+</script>
+</body>
+</html>

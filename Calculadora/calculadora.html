@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em 1 Minuto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+
+        <div id="visor">0</div>
+
+        <div class="teclas">
+            <button onclick="inserirNumero('7')">7</button>
+            <button onclick="inserirNumero('8')">8</button>
+            <button onclick="inserirNumero('9')">9</button>
+            <button onclick="operacao('+')">+</button>
+            <br>
+
+            <button onclick="inserirNumero('4')">4</button>
+            <button onclick="inserirNumero('5')">5</button>
+            <button onclick="inserirNumero('6')">6</button>
+            <button onclick="operacao('-')">-</button>
+            <br>
+
+            <button onclick="inserirNumero('1')">1</button>
+            <button onclick="inserirNumero('2')">2</button>
+            <button onclick="inserirNumero('3')">3</button>
+            <button onclick="operacao('*')">*</button>
+            <br>
+
+            <button onclick="inserirNumero('0')">0</button>
+            <button onclick="limparVisor()">C</button>
+            <button onclick="calcularResultado()">=</button>
+            <button onclick="operacao('/')">/</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
