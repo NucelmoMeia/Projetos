@@ -51,36 +51,6 @@ header {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.429);
 }
 
-/* Estilos para o conteúdo principal */
-main {
-    margin: 10px auto;
-    max-width: 600px;
-}
-
-/* Estilos para títulos no conteúdo principal */
-main h1 {
-    font-size: 23px;
-    font-family: var(--fonte-destaque);
-    padding: 10px;
-}
-
-/* Estilos para parágrafos no conteúdo principal */
-main p {
-    padding: 10px;
-    text-align: justify;
-    text-indent: 10px;
-    line-height: 20px;
-    font-size: 1em;
-    font-family: var(--fonte-padrão);
-}
-
-/* Estilos para imagens */
-.img {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    width: 150px;
-}
 
 footer{
     background-color: var(--cor4);
@@ -93,5 +63,6 @@ footer{
     font-size: 12px;
     border-radius: 10px;
     margin-bottom: 10px;
+ 
 
 }
